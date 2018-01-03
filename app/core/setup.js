@@ -7,10 +7,10 @@ define([
     // "pace",
     "jquery",
     "alertify",
-    // "managers/navigator",
-    // "core/apiAjax"
+    "managers/navigator",
+    // "core/ajax"
 
-], function ($, alertify) {
+], function ($, alertify, navigator) {
 // ], function (pace, $, alertify, navigator, apiAjax) {
 
     "use strict"
@@ -29,7 +29,7 @@ define([
             state = "running";
             if (data.user) alertify.success('You are logged in!');
             else alertify.error('You are not logged!');
-            // navigator.init(data);
+            navigator.init(data);
             // apiAjax.init();
         });
     }

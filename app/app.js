@@ -31,10 +31,10 @@ requirejs.config({
 
             // Application scripts
             "setup":            "app/core/setup",
-            // "core":             "spa/core",
-            // "managers":         "spa/managers",
-            // "models":           "spa/models",
-            // "views":            "spa/views",
+            "core":             "app/core",
+            "managers":         "app/managers",
+            "models":           "app/models",
+            "views":            "app/views",
 
         },
 
